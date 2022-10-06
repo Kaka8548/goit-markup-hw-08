@@ -14,7 +14,7 @@
   background-color: var(--white-color);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(100%);
+  // transform: translateX(100%);
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -77,4 +77,11 @@
 
 .menu-social {
   display: flex;
+  gap: 20px;
+}
+
+.menu-social-item__link {
+  color: var(--main-color) !important;
+  font-size: 18px;
+  font-weight: 500;
 }

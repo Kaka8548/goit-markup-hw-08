@@ -50,6 +50,10 @@
   margin-bottom: 10px;
   font-size: inherit;
   line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features-list__descr {

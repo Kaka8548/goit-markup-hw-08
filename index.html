@@ -129,7 +129,8 @@
           <ul class="work-list list">
             <li class="work-list__item">
               <img
-                src="./images/box-1.jpg"
+                srcset="./images/works/1-img-lg-@1x.jpg 1x, ./images/works/1-img-lg-@2x.jpg 2x"
+                src="./images/works/1-img-lg-@1x.jpg"
                 alt="Робочий стіл, на якому монітор, планшет та клавіатура; на клавіатурі руки друкують текст"
                 width="370"
               />
@@ -137,7 +138,8 @@
             </li>
             <li class="work-list__item">
               <img
-                src="./images/box-2.jpg"
+                srcset="./images/works/2-img-lg-@1x.jpg 1x, ./images/works/2-img-lg-@2x.jpg 2x"
+                src="./images/works/2-img-lg-@1x.jpg"
                 alt="Ноутбук з презентацією, одна рука лежить на клавіатурі, інша тримає телефон"
                 width="370"
               />
@@ -145,7 +147,8 @@
             </li>
             <li class="work-list__item">
               <img
-                src="./images/box-3.jpg"
+                srcset="./images/works/img3-lg-@1x.jpg 1x, ./images/works/img3-lg-@2x.jpg 2x"
+                src="./images/works/img3-lg-@1x.jpg"
                 alt="В руках знаходиться планшет з палітрою кольорів на екрані"
                 width="370"
               />
@@ -160,7 +163,19 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/img-1.jpg" alt="Чоловік" width="270" />
+              <img
+                srcset="
+                  ./images/team/img-1-270.jpg 270w,
+                  ./images/team/img-1-354.jpg 354w,
+                  ./images/team/img-1-450.jpg 450w,
+                  ./images/team/img-1-540.jpg 540w,
+                  ./images/team/img-1-708.png 708w,
+                  ./images/team/img-1-900.png 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-1-450.jpg"
+                alt="Чоловік"
+              />
               <div class="team-list__descr">
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
                 <p class="team-list__prof" lang="en">Product Designer</p>
@@ -197,7 +212,19 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img-2.jpg" alt="Жінка" width="270" />
+              <img
+                srcset="
+                  ./images/team/img-2-270.jpg 270w,
+                  ./images/team/img-2-354.jpg 354w,
+                  ./images/team/img-2-450.jpg 450w,
+                  ./images/team/img-2-540.jpg 540w,
+                  ./images/team/img-2-708.jpg 708w,
+                  ./images/team/img-2-900.png 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-2-450.jpg"
+                alt="Жінка"
+              />
               <div class="team-list__descr">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
                 <p class="team-list__prof" lang="en">Frontend Developer</p>
@@ -234,7 +261,19 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img-3.jpg" alt="Чоловік" width="270" />
+              <img
+                srcset="
+                  ./images/team/img-3-270.jpg 270w,
+                  ./images/team/img-3-354.jpg 354w,
+                  ./images/team/img-3-450.jpg 450w,
+                  ./images/team/img-3-540.jpg 540w,
+                  ./images/team/img-3-708.jpg 708w,
+                  ./images/team/img-3-900.png 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-3-450.jpg"
+                alt="Чоловік"
+              />
               <div class="team-list__descr">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p class="team-list__prof" lang="en">Marketing</p>
@@ -271,7 +310,19 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img-4.jpg" alt="Чоловік" width="270" />
+              <img
+                srcset="
+                  ./images/team/img-4-270.jpg 270w,
+                  ./images/team/img-4-354.jpg 354w,
+                  ./images/team/img-4-450.jpg 450w,
+                  ./images/team/img-4-540.jpg 540w,
+                  ./images/team/img-4-708.jpg 708w,
+                  ./images/team/img-4-900.png 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-4-450.jpg"
+                alt="Чоловік"
+              />
               <div class="team-list__descr">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p class="team-list__prof" lang="en">UI Designer</p>
@@ -482,10 +533,18 @@
           </li>
         </ul>
         <ul class="menu-social list">
-          <li class="menu-social__item">Instagram</li>
-          <li class="menu-social__item">Twitter</li>
-          <li class="menu-social__item">Facebook</li>
-          <li class="menu-social__item">LinkedIn</li>
+          <li class="menu-social__item">
+            <a href="" class="menu-social-item__link link">Instagram</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="" class="menu-social-item__link link">Twitter</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="" class="menu-social-item__link link">Facebook</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="" class="menu-social-item__link link">LinkedIn</a>
+          </li>
         </ul>
       </div>
     </div>

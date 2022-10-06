@@ -35,9 +35,11 @@
 }
 
 .contacts-left-col {
+  text-align: center;
   @media screen and (min-width: 1200px) {
     width: 231px;
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -137,7 +139,16 @@
   }
 }
 
+.contacts-right-col {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
 .contacts-third-col {
+  text-align: center;
+
   @media screen and (min-width: 768px) {
     margin: 0 auto;
   }
@@ -146,6 +157,7 @@
     margin-left: auto;
     margin-right: 0;
     width: 570px;
+    text-align: left;
   }
 }
 
