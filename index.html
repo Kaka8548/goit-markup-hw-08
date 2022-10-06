@@ -21,9 +21,14 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a href="#" class="logo logo--light"><span class="logo--main-color">Web</span>Studio</a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav>
           <ul class="nav-links list">
             <li class="nav-links__item">
@@ -54,7 +59,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <!-- Мейн -->
 
@@ -444,6 +449,47 @@
       </div>
     </footer>
 
+    <!-- МОБІЛЬНЕ МЕНЮ -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a href="index.html" class="mobile-menu__link link active">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="portfolio.html" class="mobile-menu__link link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link link">Контакти</a></li>
+      </ul>
+
+      <div class="menu-contacts-wrapper">
+        <ul class="menu-contacts list">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link--number link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link--mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-social list">
+          <li class="menu-social__item">Instagram</li>
+          <li class="menu-social__item">Twitter</li>
+          <li class="menu-social__item">Facebook</li>
+          <li class="menu-social__item">LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Модальне вікно -->
 
     <!-- <div class="backdrop is-hidden" data-modal>
@@ -522,6 +568,14 @@
       </div>
     </div> -->
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

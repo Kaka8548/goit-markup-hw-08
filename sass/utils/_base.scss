@@ -48,6 +48,12 @@ img {
   }
 }
 
+.mobile-menu__link {
+  &.active {
+    color: var(--main-color);
+  }
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 1;

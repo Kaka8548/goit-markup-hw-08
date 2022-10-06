@@ -12,8 +12,12 @@
   display: inline-block;
   color: var(--black-color);
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-style: 26px;
+  }
 }
 
 .logo--light {
@@ -24,12 +28,30 @@
   color: var(--main-color);
 }
 
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-links,
 .address-links {
   margin-left: auto;
 }
 
 .nav-links,
 .address-links {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
 }
 
