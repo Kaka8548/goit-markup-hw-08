@@ -1,0 +1,41 @@
+.work,
+.team,
+.portfolio,
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work__title,
+.team__title,
+.clients__title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.work-list__item + .work-list__item {
+  margin-left: 30px;
+}
+
+.work-list__item {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.work-list__descr {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--img-text-bg-color);
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 700;
+}

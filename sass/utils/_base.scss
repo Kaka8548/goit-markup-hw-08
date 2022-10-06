@@ -1,0 +1,52 @@
+body {
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+}
+
+button {
+  cursor: pointer;
+  color: var(--white-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  background-color: var(--main-color);
+  border-radius: 4px;
+  border: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  &:visited {
+    color: inherit;
+  }
+}
+
+.nav-links__link {
+  &.active {
+    position: relative;
+    color: var(--main-color);
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 1;
+  pointer-events: none;
+}

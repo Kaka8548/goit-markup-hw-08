@@ -1,0 +1,41 @@
+.features {
+  padding-top: 94px;
+}
+
+.features-list,
+.work-list,
+.team-list,
+.social-media-list,
+.contacts-social-div {
+  display: flex;
+}
+
+.features-list__item {
+  width: calc((100% - 90px) / 4);
+}
+
+.features-list__item + .features-list__item {
+  margin-left: 30px;
+}
+
+.features-list__icon {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.features-list__title {
+  margin-bottom: 10px;
+  font-size: inherit;
+  line-height: 1.2;
+}
+
+.features-list__descr {
+  color: var(--secondary-text-color);
+  line-height: 1.7;
+}
