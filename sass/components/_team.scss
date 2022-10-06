@@ -2,15 +2,36 @@
   background-color: var(--secondary-color);
 }
 
+.team-list {
+  gap: 30px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+
 .team-list__item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--img-card-shadow);
-}
 
-.team-list__item + .team-list__item {
-  margin-left: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-list__descr {

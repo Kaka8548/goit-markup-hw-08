@@ -1,19 +1,7 @@
-.work,
-.team,
-.portfolio,
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.work__title,
-.team__title,
-.clients__title {
-  margin: 0;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.2;
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .work-list__item + .work-list__item {

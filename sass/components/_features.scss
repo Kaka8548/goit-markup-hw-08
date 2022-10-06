@@ -1,21 +1,37 @@
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
-.features-list,
-.work-list,
-.team-list,
-.social-media-list,
-.contacts-social-div {
-  display: flex;
+.features-list {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .features-list__item {
-  width: calc((100% - 90px) / 4);
-}
+  width: 100%;
 
-.features-list__item + .features-list__item {
-  margin-left: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features-list__icon {
@@ -30,6 +46,7 @@
 }
 
 .features-list__title {
+  text-align: center;
   margin-bottom: 10px;
   font-size: inherit;
   line-height: 1.2;
